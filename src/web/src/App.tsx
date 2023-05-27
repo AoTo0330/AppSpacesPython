@@ -12,8 +12,6 @@ import Telemetry from './components/telemetry';
 
 import { datadogRum } from '@datadog/browser-rum';
 
-import { datadogRum } from '@datadog/browser-rum';
-
 datadogRum.init({
     applicationId: '223fa8ce-0bf7-4c05-b305-70c0d3d7e736',
     clientToken: 'pubeb3b240651ac1d9a19858e865d7a23f4',
