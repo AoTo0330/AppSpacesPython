@@ -27,7 +27,7 @@ datadogRum.init({
     trackUserInteractions: true,
     trackResources: true,
     trackLongTasks: true,
-    defaultPrivacyLevel:'allow'
+    defaultPrivacyLevel:'allow',
     allowedTracingUrls: ["https://app-web-geqfqepl66kso.azurewebsites.net","https://app-api-geqfqepl66kso.azurewebsites.net"]
 });
     
