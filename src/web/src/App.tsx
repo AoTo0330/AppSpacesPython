@@ -26,7 +26,7 @@ datadogRum.init({
     trackResources: true,
     trackLongTasks: true,
     defaultPrivacyLevel:'allow',
-    allowedTracingUrls: ["https://app-web-geqfqepl66kso.azurewebsites.net","https://app-api-geqfqepl66kso.azurewebsites.net"]
+    allowedTracingUrls: ["https://registry.yarnpkg.com","https://app-api-geqfqepl66kso.azurewebsites.net"]
 });
     
 datadogRum.startSessionReplayRecording();
