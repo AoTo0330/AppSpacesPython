@@ -12,12 +12,14 @@ import Telemetry from './components/telemetry';
 
 import { datadogRum } from '@datadog/browser-rum';
 
+import { datadogRum } from '@datadog/browser-rum';
+
 datadogRum.init({
     applicationId: '223fa8ce-0bf7-4c05-b305-70c0d3d7e736',
     clientToken: 'pubeb3b240651ac1d9a19858e865d7a23f4',
     site: 'datadoghq.com',
     service:'todolist',
-    env:'none',
+    env:'test',
     // Specify a version number to identify the deployed version of your application in Datadog 
     // version: '1.0.0',
     sessionSampleRate: 100,
@@ -25,7 +27,8 @@ datadogRum.init({
     trackUserInteractions: true,
     trackResources: true,
     trackLongTasks: true,
-    defaultPrivacyLevel:'mask-user-input'
+    defaultPrivacyLevel:'allow'
+    allowedTracingUrls: ["https://app-web-geqfqepl66kso.azurewebsites.net","https://app-api-geqfqepl66kso.azurewebsites.net"]
 });
     
 datadogRum.startSessionReplayRecording();
